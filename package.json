@@ -1,0 +1,14 @@
+{
+    "name": "usms-workouts",
+    "version": "1.0.0",
+    "description": "Handlebars prototype for rendering workouts.",
+    "main": "./src/index.js",
+    "author": "Jay Place",
+    "license": "MIT",
+    "scripts": {},
+    "dependencies": {
+        "handlebars": "^4.7.2",
+        "webpack": "^4.41.5"
+    },
+    "devDependencies": {}
+}
