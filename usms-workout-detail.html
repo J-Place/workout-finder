@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="css/clubfinder.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/list-control.css">
+    <link rel="stylesheet" type="text/css" href="css/list-control-clean.css">
 </head>
 <body>
     <div id="main-container" class="club">
@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <!-- Filters -->
+            <!-- Main Conent -->
             <div class="section section-full bg-grayXXX">
                 <div class="usms-container">
                     <div class="row">
@@ -108,9 +108,9 @@
                                         <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
                                     </div>
                                     <div class="workout__description">A great way to start off the new year. Focus on sprints.</div>
-                                    <div class="workout__print-this"><a href="#"><span class="icon"></span>Print This Workout</a></div>
+                                    <div class="workout__download-pdf"><a href="#" id="savePDF"><span class="icon"></span>Print Workout</a></div>
                                 </div>
-                                <div class="workout__summary">
+                                <div class="workout__content">
                                     <div class="set">
                                         <div class="set__header">
                                             <div class="set__title">KD: Easy Warm Up</div>
@@ -268,6 +268,25 @@
                                 <p>Want to customize this workout, or load it to your device? We’ve partnered with Swim.com to bring you integrated swim tracking and customizable workouts.</p>
                                 <button href="#" class="btn btn-primary btn-small">View on Swim.com</button>
                             </div>
+                            <div class="workout-glossary">
+                                <h3>Glossary of Terms</h3>
+                                <p>We understand, sometimes a swim workout can be difficult to interpret. View a glossary of terms frequently used in our workouts.</p>
+                                <button href="#" class="btn btn-primary btn-small">View Glossary</button>
+                            </div>
+
+                            <div class="article-author bg-ltblue">
+                                <div class="article-author__header">
+                                    <div class="article-author__image-container bg-gray">
+                                        <img class="article-author__image" src="https://floridagators.com/images/2007/1/1/_swimmingdiving_men_images_bioimg2007_8.jpg?width=300" alt="">
+                                    </div>
+                                    <h3 class="text-capitalize article-author__title"><small>About the Coach</small><br>Kyle Deery</h3>
+                                </div>
+                                <div class="article-author__content">
+                                    <div class="html-container">
+                                        <p>A college swimmer and Olympic Trials qualifier, Kyle graduated from the University of Florida with a bachelor of science degree in advertising with a specialization in sports management. He worked with the Student-Athlete Advisory Committee on marketing efforts to increase awareness of sporting events on campus. After graduation, he worked for the UF Athletic Association as a marketing assistant, where he conducted research and created new marketing initiatives and helped implement them on a local and regional level. Before he arrived at USMS, he also worked at a marketing and advertising service for local restaurants in Gainesville, Fla. </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- Sidebar -->
                         <div class="col-sm-3">
@@ -276,11 +295,13 @@
                                 <p>Want to customize this workout, or load it to your device? We’ve partnered with Swim.com to bring you integrated swim tracking and customizable workouts.</p>
                                 <button href="#" class="btn btn-primary btn-small">View on Swim.com</button>
                             </div>
+                            <img src="https://tpc.googlesyndication.com/simgad/3349469813821145865" alt="">
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
+            <div class="show-url"></div>
 
         </main>
 
@@ -728,6 +749,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <!-- <script type="text/javascript" src="./scripts/accordion.js"></script> -->
     <!-- <script type="text/javascript" src="./scripts/club.js"></script> -->

@@ -16,8 +16,8 @@
 <link href="css/usms.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 <!-- <link rel="stylesheet" type="text/css" href="css/clubfinder.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
-<link rel="stylesheet" type="text/css" href="css/list-control.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/list-control-clean.css">
 
 <body>
     <div id="main-container" class="club">
@@ -160,8 +160,105 @@
 
                         <!-- Search Results -->
                         <div class="col-xs-12" style="min-height: 450px;">
-                            <div class="list-results">
-                                <div class="list-item workout">
+                            <!-- Results List -->
+                            <ul class="workout-list list--nostyle">
+                                <li class="workout-list-item">
+                                    <div class="workout__header">
+                                        <div class="workout__title">KD: Great Workout</div>
+                                        <div class="workout__stats">
+                                            <div class="workout_stats--date">01/06/2020</div>
+                                            <div class="workout_stats--course">Course: <strong>25y</strong></div>
+                                            <div class="workout_stats--distance">Distance: <strong>2700</strong></div>
+                                            <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
+                                        </div>
+                                        <button class="view-details btn btn-primary btn-small" href="./usms-workout-detail.html">View Workout Details</button>
+                                    </div>
+                                    <div class="workout__content">
+                                        <!-- Get all of setType = "Warm Up" and put in this column -->
+                                        <div class="col-sm-4">
+                                            <div class="set">
+                                                <div class="set__title">KD: Easy Warm Up</div>
+                                                <!-- If ( item.listInterval.count > 1 ) -->
+                                                    <!-- <div class="group-repeat">1</div> -->
+                                                <!-- End if -->
+                                                <div class="length">
+                                                    <!-- If ( lengthRepeat.val > 1 ) -->
+                                                        <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
+                                                    <!-- End if -->
+                                                    <div class="distance" id="distanceByUnit">400</div>   
+                                                    <div class="stroke" id="strokeType">Choice</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Get all of setType = "Main Set" and put in this column -->
+                                        <div class="col-sm-4">
+                                            <div class="set">
+                                                <div class="set__title">KD: Repeat Main Set</div>
+                                                <!-- If ( item.listInterval.count > 1 ) -->
+                                                    <!-- <div class="group-repeat">1</div> -->
+                                                <!-- End if -->
+                                                <div class="length">
+                                                    <!-- If ( lengthRepeat.val > 1 ) -->
+                                                        <div class="length-repeat" id="lengthRepeat">5</div>
+                                                    <!-- End if -->
+                                                    <div class="distance" id="distanceByUnit">100</div>   
+                                                    <div class="stroke" id="strokeType">Free</div>
+                                                </div>
+                                            </div>
+                                            <div class="set">
+                                                <div class="set__title">KD: IM Set</div>
+                                                <!-- If ( item.listInterval.count > 1 ) -->
+                                                    <div class="group-repeat">4<!-- item.listInterval.grouprepeat.value --></div>
+                                                <!-- End if -->
+                                                <div class="interval">
+                                                    <!-- If ( item.listInterval.lengthRepeat.val > 1 ) -->
+                                                        <div class="length-repeat" id="lengthRepeat">4</div>
+                                                    <!-- End if -->
+                                                    <div class="distance" id="distanceByUnit">50</div>   
+                                                    <div class="stroke" id="strokeType">Choice</div>
+                                                </div>                                                
+                                                <div class="interval">
+                                                    <!-- If ( lengthRepeat.val > 1 ) -->
+                                                        <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
+                                                    <!-- End if -->
+                                                    <div class="distance" id="distanceByUnit">100</div>   
+                                                    <div class="stroke" id="strokeType">Choice</div>
+                                                </div>  
+                                            </div>
+                                            <div class="set">
+                                                <!-- If ( item.listInterval.count > 1 ) -->
+                                                    <!-- <div class="group-repeat">4item.listInterval.grouprepeat.value</div> -->
+                                                <!-- End if -->
+                                                <div class="set__title">KD: Pull Set</div>
+                                                <div class="length">
+                                                    <!-- If ( lengthRepeat.val > 1 ) -->
+                                                        <div class="length-repeat" id="lengthRepeat">8</div>
+                                                    <!-- End if -->
+                                                    <div class="distance" id="distanceByUnit">50</div>   
+                                                    <div class="stroke" id="strokeType">Pull</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Get all of setType = "Cool Down" and put in this column -->
+                                        <div class="col-sm-4">
+                                            <div class="set">
+                                                <!-- If ( item.listInterval.count > 1 ) -->
+                                                    <!-- <div class="group-repeat">4item.listInterval.grouprepeat.value</div> -->
+                                                <!-- End if -->
+                                                <div class="set__title">KD: Warm Down</div>
+                                                <div class="length">
+                                                    <!-- If ( lengthRepeat.val > 1 ) -->
+                                                        <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
+                                                    <!-- End if -->
+                                                    <div class="distance" id="distanceByUnit">200</div>   
+                                                    <div class="stroke" id="strokeType">Choice</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="workout__footer"></div>
+                                </li>
+                                <li class="workout-list-item">
                                     <div class="workout__header">
                                         <div class="workout__title">KD: Great Workout</div>
                                         <div class="workout__stats">
@@ -299,8 +396,8 @@
                                         </div>
                                     </div>
                                     <div class="workout__footer"></div>
-                                </div>
-                                <div class="list-item workout">
+                                </li>
+                                <li class="workout-list-item">
                                     <div class="workout__header">
                                         <div class="workout__title">KD: Great Workout</div>
                                         <div class="workout__stats">
@@ -395,10 +492,18 @@
                                         </div>
                                     </div>
                                     <div class="workout__footer"></div>
-                                </div>
-                            </div>
-                        </div>
+                                </li>
+                            </ul>
+                            <!-- Pagination -->
+                            <div class="results-list__pagination-container" data-reactid="375"><ul class="results-list__pagination list--nostyle" data-reactid="376"><li data-reactid="377"><button class="btn btn-chevron-left" type="submit" disabled="" data-reactid="378"><i class="fa fa-chevron-left" data-reactid="379"></i></button></li><li data-reactid="380"><button class="btn btn-results-1 btn-active" type="submit" data-page="1" data-reactid="381">1</button></li><li data-reactid="382"><button class="btn btn-results-2 " type="submit" data-page="2" data-reactid="383">2</button></li><li data-reactid="384"><button class="btn btn-results-3 " type="submit" data-page="3" data-reactid="385">3</button></li><li data-reactid="386"><button class="btn btn-results-4 " type="submit" data-page="4" data-reactid="387">4</button></li><li data-reactid="388"><button class="btn" type="submit" data-reactid="389">...</button><!-- react-empty: 390 --></li><li data-reactid="391"><button class="btn btn-results-189 " type="submit" data-page="189" data-reactid="392">189</button></li><li data-reactid="393"><button class="btn btn-chevron-right" type="submit" data-reactid="394"><i class="fa fa-chevron-right" data-reactid="395"></i></button></li></ul></div>
 
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                        </div>
                     </div>
                 </div>
             </div>
