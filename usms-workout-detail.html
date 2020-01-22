@@ -111,15 +111,22 @@
                                     <div class="workout__download-pdf"><a href="#" id="savePDF"><span class="icon"></span>Print Workout</a></div>
                                 </div>
                                 <div class="workout__content">
+
+                                    
                                     <div class="set">
                                         <div class="set__header">
                                             <div class="set__title">KD: Easy Warm Up</div>
+                                            <div class="set__distance">
+                                                (<span class="distance-total">400</span><span class="distance-unit">y</span>)
+                                            </div>
+                                            <div class="set__description">Long and easy warm up</div>
                                         </div>
-                                        <!-- If ( item.listInterval.count > 1 ) -->
+
+                                        <!-- If ( item.listInterval.count > 1 ) ... show html -->
                                             <!-- <div class="group-repeat">1</div> -->
                                         <!-- End if -->
-                                        <div class="length">
-                                            <!-- If ( lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
                                                 <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">400</div>   
@@ -128,6 +135,8 @@
                                             <div class="notes">Build the last 100</div>
                                         </div>
                                     </div>
+
+
                                     <div class="set">
                                         <div class="set__header">
                                             <div class="set__title">KD: Repeat Main Set</div>
@@ -141,8 +150,8 @@
                                         <!-- If ( item.listInterval.count > 1 ) -->
                                             <!-- <div class="group-repeat">1</div> -->
                                         <!-- End if -->
-                                        <div class="length">
-                                            <!-- If ( lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
                                                 <div class="length-repeat" id="lengthRepeat">5</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">100</div>   
@@ -151,6 +160,10 @@
                                             <div class="notes">Holding your fastest pace</div>
                                         </div>
                                     </div>
+
+
+
+
                                     <div class="set">
                                         <div class="set__header">
                                             <div class="set__title">KD: IM Set</div>
@@ -159,11 +172,16 @@
                                             </div>
                                             <div class="set__description">IM Set</div>
                                         </div>
-                                        <!-- If ( item.listInterval.count > 1 ) -->
-                                        <div class="group-repeat">4<!-- item.listInterval.grouprepeat.value --></div>
+
+
+
+                                        <!-- if ( item.listInterval.count > 1 ) ... then show html block-->
+                                                <!-- item.listInterval.grouprepeat.value -->
+                                            <div class="group-repeat">4</div>
                                         <!-- End if -->
+
                                         <div class="interval">
-                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) -->
+                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... show html block -->
                                                 <div class="length-repeat" id="lengthRepeat">4</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">50</div>   
@@ -171,8 +189,13 @@
                                             <div class="pace">0:30 rest</div>
                                             <div class="notes">descend 1-4 with #4 being all out</div>
                                         </div>
+
+
+
+
+
                                         <div class="interval">
-                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) -->
+                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... then show html block -->
                                                 <div class="length-repeat" id="lengthRepeat">2</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">100</div>   
@@ -180,19 +203,21 @@
                                             <div class="pace">1:00 rest</div>
                                             <div class="notes">Fly, back, breast, and free by round</div>
                                         </div>
+
                                         <div class="interval">
-                                            <!-- If ( lengthRepeat.val > 1 ) -->
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
                                                 <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">200</div>   
                                             <div class="stroke" id="strokeType">Choice</div>
-                                        </div>  
-                                        <!-- If ( item.listInterval.count > 1 ) -->
+                                        </div>
+
+                                        <!-- if ( item.listInterval.count > 1 ) ... then show html block -->
                                         <!--item.listInterval.grouprepeat.value -->
                                         <!-- <div class="group-repeat">2</div>--> 
                                         <!-- End if -->
-                                        <div class="length">
-                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... then show html block -->
                                                 <div class="length-repeat" id="lengthRepeat">4</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">100</div>   
@@ -200,45 +225,51 @@
                                             <div class="pace">1:15</div>
                                             <div class="notes">reverse IM order</div>
                                         </div>
-                                        <div class="length">
-                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... then show html block -->
                                                 <div class="length-repeat" id="lengthRepeat">2</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">200</div>   
                                             <div class="stroke" id="strokeType">IM</div>
                                         </div>
-                                        <div class="length">
-                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... then show html block -->
                                                 <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">400</div>   
                                             <div class="stroke" id="strokeType">IM</div>
                                         </div>
                                     </div>
+
+
+
+
+
                                     <div class="set">
-                                        <!-- If ( item.listInterval.count > 1 ) -->
+                                        <!-- if ( item.listInterval.count > 1 ) ... then show html block-->
                                         <!-- (".group-repeat").val() = item.listInterval.grouprepeat -->
-                                            <!-- <div class="group-repeat">4</div> -->
+                                            <!-- <div class="group-repeat">1</div> -->
                                         <!-- End if -->
                                         <div class="set__header">
                                             <div class="set__title">KD: Pull Set</div>
+                                            <div class="set__description"></div>
                                         </div>
-                                        <div class="length">
-                                            <!-- If ( lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
                                                 <div class="length-repeat" id="lengthRepeat">8</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">50</div>   
                                             <div class="stroke" id="strokeType">Pull</div>
                                         </div>
-                                        <div class="length">
+                                        <div class="interval">
                                             <!-- If ( lengthRepeat.val > 1 ) show this-->
                                                 <div class="length-repeat" id="lengthRepeat">4</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">100</div>   
                                             <div class="stroke" id="strokeType">Pull</div>
                                         </div>
-                                        <div class="length">
-                                            <!-- If ( lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
                                                 <div class="length-repeat" id="lengthRepeat">2</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">200</div>   
@@ -246,14 +277,15 @@
                                         </div>
                                     </div>
                                     <div class="set">
-                                        <!-- If ( item.listInterval.count > 1 ) -->
+                                        <!-- if ( item.listInterval.count > 1 ) ... then show html block-->
                                             <!-- <div class="group-repeat">4item.listInterval.grouprepeat.value</div> -->
                                         <!-- End if -->
                                         <div class="set__header">
                                             <div class="set__title">KD: Warm Down</div>
+                                            <div class="set__description"></div>
                                         </div>
-                                        <div class="length">
-                                            <!-- If ( lengthRepeat.val > 1 ) -->
+                                        <div class="interval">
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
                                                 <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">200</div>   
@@ -263,11 +295,13 @@
                                 </div>
                                 <div class="workout__footer"></div>
                             </div>
+
                             <div class="workout-customizer show-mobile">
                                 <h3>Make It Yours</h3>
                                 <p>Want to customize this workout, or load it to your device? We’ve partnered with Swim.com to bring you integrated swim tracking and customizable workouts.</p>
                                 <button href="#" class="btn btn-primary btn-small">View on Swim.com</button>
                             </div>
+
                             <div class="workout-glossary">
                                 <h3>Glossary of Terms</h3>
                                 <p>We understand, sometimes a swim workout can be difficult to interpret. View a glossary of terms frequently used in our workouts.</p>
@@ -301,7 +335,6 @@
                     </div>
                 </div>
             </div>
-            <div class="show-url"></div>
 
         </main>
 
