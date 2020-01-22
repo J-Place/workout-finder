@@ -657,7 +657,7 @@
 .set__distance {
     margin-left: 0;
 }
-.interval {
+.interval.repeat {
     line-height: 1.8rem;
     border-left: 1px solid #cccccc;
     margin-left: 2.9rem;
@@ -674,9 +674,9 @@
 .workout__detail .length {
     margin-top: 0.5rem;
 }
-.workout__detail .interval + .length {
+/* .workout__detail .interval.repeat + .interval {
     margin-top: 1.25rem;
-}
+} */
 .group-repeat {
     /* margin-bottom: -0.2rem; */
     margin-bottom: -1.8rem;
@@ -862,10 +862,9 @@
     /* .workout__detail .interval {
         margin-left: 1.75rem;
     } */
-    .workout__detail .interval + .length {
+    /* .workout__detail .interval.repeat + .interval {
         margin-top: 1.25rem;
-    }
-    
+    } */    
     .workout__detail .notes {
         display: inline-block;
     }
@@ -922,9 +921,6 @@
     }
     .workout__detail .set__header {
         margin-bottom: 0;
-    }
-    .workout__detail .length {
-        /* margin-top: 0; */
     }
     .set__description, 
     .set__distance,
