@@ -4,19 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Workout Finder | U.S. Masters Swimming</title>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <link rel="stylesheet" href="./Login _ U.S. Masters Swimming_files/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="./Login _ U.S. Masters Swimming_files/bootstrap-theme.min.css"> -->
-
+    <title>Workout Detail | U.S. Masters Swimming</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link href="css/usms.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="css/clubfinder.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/list-control-clean.css">
+    <link rel="stylesheet" type="text/css" href="css/workout.css">
+    <link rel="stylesheet" type="text/css" href="css/workout-detail.css">
 </head>
 <body>
     <div id="main-container" class="club">
@@ -108,7 +102,7 @@
                                         <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
                                     </div>
                                     <div class="workout__description">A great way to start off the new year. Focus on sprints.</div>
-                                    <div class="workout__download-pdf"><a href="#" id="savePDF"><span class="icon"></span>Print Workout</a></div>
+                                    <div class="print-workout"><a href="#" id="printWorkout"><span class="icon"></span>Print Workout</a></div>
                                 </div>
                                 <div class="workout__content">
 
@@ -127,7 +121,7 @@
                                         <!-- End if -->
                                         <div class="interval">
                                             <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
-                                                <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
+                                                <!-- <div class="length-repeat">1</div> -->
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">400</div>   
                                             <div class="stroke" id="strokeType">Choice</div>
@@ -152,7 +146,7 @@
                                         <!-- End if -->
                                         <div class="interval">
                                             <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
-                                                <div class="length-repeat" id="lengthRepeat">5</div>
+                                                <div class="length-repeat">5</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">100</div>   
                                             <div class="stroke" id="strokeType">Free</div>
@@ -180,10 +174,10 @@
                                         <div class="group-repeat">4</div>
                                         <!-- End if -->
 
-                                        <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... add class -->
+                                        <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... add "repeat" class -->
                                         <div class="interval repeat">
                                             <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... show html block -->
-                                                <div class="length-repeat" id="lengthRepeat">4</div>
+                                            <div class="length-repeat">4</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">50</div>   
                                             <div class="stroke" id="strokeType">Choice</div>
@@ -192,7 +186,7 @@
                                         </div>
                                         <div class="interval repeat">
                                             <!-- If ( item.listInterval.lengthRepeat.val > 1 ) ... then show html block -->
-                                                <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
+                                                <!-- <div class="length-repeat">1</div> -->
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">100</div>   
                                             <div class="stroke" id="strokeType">Choice</div>
@@ -212,9 +206,9 @@
                                             <div class="set__title">KD: Pull Set</div>
                                             <div class="set__description"></div>
                                         </div>
-                                        <div class="interval length">
+                                        <div class="interval">
                                             <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
-                                                <div class="length-repeat" id="lengthRepeat">8</div>
+                                                <div class="length-repeat">8</div>
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">50</div>   
                                             <div class="stroke" id="strokeType">Pull</div>
@@ -232,7 +226,7 @@
                                         </div>
                                         <div class="interval">
                                             <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
-                                                <!-- <div class="length-repeat" id="lengthRepeat">1</div> -->
+                                                <!-- <div class="length-repeat">1</div> -->
                                             <!-- End if -->
                                             <div class="distance" id="distanceByUnit">200</div>   
                                             <div class="stroke" id="strokeType">Choice</div>

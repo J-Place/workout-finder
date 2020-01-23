@@ -54,6 +54,6 @@ function renderWorkouts(workout) {
 // console.log(window.location.href);
 // console.log(showUrl.innerHTML);
 
-$('#savePDF').click(function () {
+$('#printWorkout').click(function () {
     window.print();
 });
