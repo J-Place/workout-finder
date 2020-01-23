@@ -89,7 +89,7 @@
 
 .workout__header {
     position: relative;
-    margin: 0.5rem auto 4rem;
+    margin: 0.5rem auto 3rem;
     padding-bottom: 0;
     border-bottom: none;
 }
@@ -188,12 +188,11 @@
 .pace {
   display: inline-block !important;
 }
-.length-repeat,
 .group-repeat {
   margin-top: 3px;
 }
 .group-repeat {
-    margin-bottom: -2rem;
+    margin-bottom: -1.9rem;
 }
 .group-repeat:after {
   position: relative;
@@ -209,11 +208,20 @@
     width: auto;
     margin-left: 5px;
 }
+.interval {
+    margin-top: 3px;
+}
 .interval.repeat {
     line-height: 1.8rem;
     border-left: 1px solid #cccccc;
+    margin-top: 0;
     margin-left: 2.9rem;
     padding-left: 0.8rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+.interval.repeat + .interval:not(.repeat) {
+    margin-top: 5px;
 }
 
 @media only screen and (min-width: 768px) {
