@@ -14,19 +14,6 @@
 
 
 
-/* Layout Helpers - Perhaps Use Different Show/Hide Technique */
-/* Used on 'Make It Yours' CTA that is duplicated in Sidebar and in Main under Workout */
-.show-mobile {
-    display: block;
-}
-.hide-mobile {
-    display: none;
-}
-
-
-
-
-
 /* Helper for Main Content collumn – Consider global class for this on all 2-col layouts */
 .gutter {
     padding-right: 5px;
@@ -108,13 +95,16 @@
     display: block;
     margin: 0 1rem 0 0;
 }
-.workout_stats--date:after {
-    content: "–";
-    font-weight: normal;
-    margin: 0 -.25rem 0 1.25rem;
+.workout__stats--date:after {
+    content: "";
+    /* font-weight: normal; */
+    /* margin: 0 -.25rem 0 1.25rem; */
 }
 .workout .view-details {
     margin: 0 auto 2.25rem;
+}
+.workout__footer button {
+    margin: 3.5rem 0 3rem;
 }
 
 
@@ -124,7 +114,7 @@
     font-size: 1.35rem;
     line-height: 1.8rem;
     margin: 0 auto 2.5rem;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 .set__header {
     margin: 0 0 1.25rem -2rem;
@@ -224,6 +214,23 @@
     margin-top: 5px;
 }
 
+
+
+/* DEV NOTES */
+
+/* Override usms style sheet that sets page header height. Allows longer header text. */
+.page-header {
+    height: auto;
+}
+
+/* Mock up helper class. Check for existing or alternate functionality in dev. */
+/* Used on 'Make It Yours' CTA that is duplicated in Sidebar and in Main under Workout */
+.show-mobile {
+    display: block;
+}
+.hide-mobile {
+    display: none;
+}
 @media only screen and (min-width: 768px) {
     .show-mobile {
         display: none;
@@ -234,14 +241,14 @@
     .gutter {
         padding-right: 9rem;
     }
-
-
-
     .page-header {
         min-height: 200px;
     }
 
+}
 
+
+@media only screen and (min-width: 768px) {
 
     .print-workout {
         position: absolute;
@@ -250,8 +257,6 @@
         top: 0.3rem;
         right: 0;
     }
-
-
 
     .workout__stats > * {
         display: inline-block;
@@ -281,5 +286,10 @@
         margin: 0 0.25rem 0  0.25rem;
     }
 
+    .workout__stats--date:after {
+        content: "–";
+        font-weight: normal;
+        margin: 0 -.25rem 0 1.25rem;
+    }
 
 }

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]-->
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Workout Finder | U.S. Masters Swimming</title>
-
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-<link href="css/usms.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/list-control.css">
-<link rel="stylesheet" type="text/css" href="css/workout.css">
-<link rel="stylesheet" type="text/css" href="css/workout-results-list.css">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Workout Search | U.S. Masters Swimming</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link href="css/usms.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/list-control.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/workout.css">
+    <link rel="stylesheet" type="text/css" href="css/workout-search.css">
+</head>
 <body>
-    <div id="main-container" class="club">
+    <div id="main-container">
     <!-- Header -->
         <header class="header-static">
             <div id="react_9v4BbESxoECEPsCVsD1EUw">
@@ -74,7 +74,7 @@
                                             <a class="breadcrumb__link" href="/">Home<i class="fa fa-chevron-right"></i></a>
                                         </li>
                                         <li class="text-capitalize breadcrumb__item ">
-                                            <a class="breadcrumb__link" href="/">Workouts<i class="fa fa-chevron-right"></i></a>
+                                            <a class="breadcrumb__link" href="index.html">Workouts<i class="fa fa-chevron-right"></i></a>
                                         </li>
                                     </ul>
                                     <span class="breadcrumb__title text-capitalize">Triathlon Training</span>
@@ -91,8 +91,8 @@
                 </h1>
             </header>
 
-            <!-- Filters -->
-            <div class="section section-full bg-grayXXX">
+            <!-- Main -->
+            <div class="section section-full">
                 <div class="usms-container">
                     <div class="row">
 
@@ -104,18 +104,19 @@
                                         <!-- <span class="tag-list--title">Filters:</span> -->
                                         <div class="list-control-search--tags"></div><i class="fa fa-refresh fa-spin list-control-search--summary-loading" style="display:none;"></i>
                                         <div class="list-control-search--summary">
-                                            Showing <strong>13 workouts</strong> for <strong> 25y Course</strong>, <strong>Ladder</strong>
+                                            Showing <strong>1-3</strong> of <strong>3</strong> workouts<!-- for <strong> 25y Course</strong>, <strong>Ladder</strong> -->
                                         </div>
                                     </div>
-                                    <div class="list-control-search-mobile__toggle show-search">Narrow Your Results</div>
+                                    <div class="list-control-search-mobile__toggle">Narrow Your Results</div>
                                     <div class="list-control-search__content form-group is-flex" style="display: flex;">
                                         <div class="list-control-search__input list-control-search__input--course">
                                             <label for="search-filter__club-name">Filter by Course</label>
                                             <div class="input-group">
                                                 <select id="search-filter__range" name="search-filter__range">
-                                                    <option selected="" value="25y">25y</option>
+                                                    <option value="">Select a Course</option>
+                                                    <option value="25y">25y</option>
                                                     <option value="25m">25m</option>
-                                                    <option value="50m">50m</option>
+                                                    <option selected="" value="50m">50m</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -123,11 +124,19 @@
                                             <label for="search-filter__range">Filter by Distance</label>
                                             <div class="input-group">
                                                 <select id="search-filter__range" name="search-filter__range">
-                                                    <option selected="" value="min"> Under 1000</option>
-                                                    <option value="1500">1000-1500</option>
-                                                    <option value="2000">1500-2000</option>
-                                                    <option value="3000">2000-3000</option>
-                                                    <option value="max">Over 3000</option>
+                                                    <option selected="" value="">Select a Distance</option>
+                                                    <option value="min">500-999</option>
+                                                    <option value="1500">1,000-1,499</option>
+                                                    <option value="2000">1,500-1,999</option>
+                                                    <option value="3000">2,000-2,499</option>
+                                                    <option value="3000">2,500-2,999</option>
+                                                    <option value="3000">3,000-3,499</option>
+                                                    <option value="3000">3,500-3,999</option>
+                                                    <option value="3000">4,000-4,499</option>
+                                                    <option value="3000">4,500-4,999</option>
+                                                    <option value="3000">5,000-5,499</option>
+                                                    <option value="3000">5,500-5,999</option>
+                                                    <option value="max">Over 6,000</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -135,11 +144,17 @@
                                             <label for="search-filter__location">Filter by Set Type</label>
                                             <div class="input-group">
                                                 <select id="search-filter__range" name="search-filter__range">
-                                                    <option selected="" value="min">Repeats</option>
-                                                    <option value="1500">Ladder</option>
-                                                    <option value="2000">IM Drills</option>
-                                                    <option value="3000">Kick Drills</option>
-                                                    <option value="max">Sprints</option>
+                                                    <option>Select a Set Type</option>
+                                                    <option>Ladder</option>
+                                                    <option>Descend</option>
+                                                    <option>Repeats</option>
+                                                    <option>Test Set</option>
+                                                    <option>Kick Set</option>
+                                                    <option>Sprint Set</option>
+                                                    <option>Distance Set</option>
+                                                    <option selected="">Pull Set</option>
+                                                    <option>Drill Set</option>
+                                                    <option>V02 Max Set</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -154,19 +169,19 @@
                         </div>
 
                         <!-- Search Results -->
-                        <div class="col-xs-12" style="min-height: 450px;">
+                        <div class="col-xs-12 col-sm-9">
                             <!-- Results List -->
                             <ul class="workout-list list--nostyle">
                                 <li class="workout-list-item">
                                     <div class="workout__header">
-                                        <div class="workout__title">KD: Great Workout</div>
+                                        <div class="workout__title">Workout 01</div>
                                         <div class="workout__stats">
-                                            <div class="workout_stats--date">01/06/2020</div>
-                                            <div class="workout_stats--course">Course: <strong>25y</strong></div>
-                                            <div class="workout_stats--distance">Distance: <strong>2700</strong></div>
-                                            <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
+                                            <div class="workout__stats--date">01/06/2020</div>
+                                            <div class="workout__stats--course">Course: <strong>50m</strong></div>
+                                            <div class="workout__stats--distance">Distance: <strong>6700</strong></div>
+                                            <div class="workout__stats--time">Time: <strong>4h 50m</strong></div>
                                         </div>
-                                        <button class="view-details btn btn-primary btn-small" href="./usms-workout-detail.html">View Workout Details</button>
+                                        <button class="view-details btn btn-primary btn-small hide-mobile" href="./usms-workout-detail.html">View Workout Details</button>
                                     </div>
                                     <div class="workout__content">
                                         <!-- Get all of setType = "Warm Up" and put in this column -->
@@ -251,18 +266,20 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="workout__footer"></div>
+                                    <div class="workout__footer">
+                                        <button class="view-details btn btn-primary btn-small show-mobile" href="./usms-workout-detail.html">View Workout Details</button>
+                                    </div>
                                 </li>
                                 <li class="workout-list-item">
                                     <div class="workout__header">
-                                        <div class="workout__title">KD: Great Workout</div>
+                                        <div class="workout__title">Workout 02</div>
                                         <div class="workout__stats">
-                                            <div class="workout_stats--date">01/06/2020</div>
-                                            <div class="workout_stats--course">Course: <strong>25y</strong></div>
-                                            <div class="workout_stats--distance">Distance: <strong>2700</strong></div>
-                                            <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
+                                            <div class="workout__stats--date">01/06/2020</div>
+                                            <div class="workout__stats--course">Course: <strong>50m</strong></div>
+                                            <div class="workout__stats--distance">Distance: <strong>6000</strong></div>
+                                            <div class="workout__stats--time">Time: <strong>4h 50m</strong></div>
                                         </div>
-                                        <a class="view-details btn btn-primary btn-small" href="./usms-workout-detail.html">View Workout Details</a>
+                                        <button class="view-details btn btn-primary btn-small hide-mobile" href="./usms-workout-detail.html">View Workout Details</button>
                                     </div>
                                     <div class="workout__content">
                                         <div class="col-sm-4">
@@ -390,18 +407,20 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="workout__footer"></div>
+                                    <div class="workout__footer">
+                                        <button class="view-details btn btn-primary btn-small show-mobile" href="./usms-workout-detail.html">View Workout Details</button>
+                                    </div>
                                 </li>
                                 <li class="workout-list-item">
                                     <div class="workout__header">
-                                        <div class="workout__title">KD: Great Workout</div>
+                                        <div class="workout__title">Workout 03</div>
                                         <div class="workout__stats">
-                                            <div class="workout_stats--date">01/06/2020</div>
-                                            <div class="workout_stats--course">Course: <strong>25y</strong></div>
-                                            <div class="workout_stats--distance">Distance: <strong>2700</strong></div>
-                                            <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
+                                            <div class="workout__stats--date">01/06/2020</div>
+                                            <div class="workout__stats--course">Course: <strong>50m</strong></div>
+                                            <div class="workout__stats--distance">Distance: <strong>6300</strong></div>
+                                            <div class="workout__stats--time">Time: <strong>4h 50m</strong></div>
                                         </div>
-                                        <button class="view-details btn btn-primary btn-small" href="./usms-workout-detail.html">View Workout Details</button>
+                                        <button class="view-details btn btn-primary btn-small hide-mobile" href="./usms-workout-detail.html">View Workout Details</button>
                                     </div>
                                     <div class="workout__content">
                                         <!-- Get all of setType = "Warm Up" and put in this column -->
@@ -486,18 +505,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="workout__footer"></div>
+                                    <div class="workout__footer">
+                                        <button class="view-details btn btn-primary btn-small show-mobile" href="./usms-workout-detail.html">View Workout Details</button>
+                                    </div>
                                 </li>
                             </ul>
                             <!-- Pagination -->
-                            <div class="results-list__pagination-container" data-reactid="375"><ul class="results-list__pagination list--nostyle" data-reactid="376"><li data-reactid="377"><button class="btn btn-chevron-left" type="submit" disabled="" data-reactid="378"><i class="fa fa-chevron-left" data-reactid="379"></i></button></li><li data-reactid="380"><button class="btn btn-results-1 btn-active" type="submit" data-page="1" data-reactid="381">1</button></li><li data-reactid="382"><button class="btn btn-results-2 " type="submit" data-page="2" data-reactid="383">2</button></li><li data-reactid="384"><button class="btn btn-results-3 " type="submit" data-page="3" data-reactid="385">3</button></li><li data-reactid="386"><button class="btn btn-results-4 " type="submit" data-page="4" data-reactid="387">4</button></li><li data-reactid="388"><button class="btn" type="submit" data-reactid="389">...</button><!-- react-empty: 390 --></li><li data-reactid="391"><button class="btn btn-results-189 " type="submit" data-page="189" data-reactid="392">189</button></li><li data-reactid="393"><button class="btn btn-chevron-right" type="submit" data-reactid="394"><i class="fa fa-chevron-right" data-reactid="395"></i></button></li></ul></div>
-
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-
+                            <!-- <div class="results-list__pagination-container" data-reactid="375"><ul class="results-list__pagination list--nostyle" data-reactid="376"><li data-reactid="377"><button class="btn btn-chevron-left" type="submit" disabled="" data-reactid="378"><i class="fa fa-chevron-left" data-reactid="379"></i></button></li><li data-reactid="380"><button class="btn btn-results-1 btn-active" type="submit" data-page="1" data-reactid="381">1</button></li><li data-reactid="382"><button class="btn btn-results-2 " type="submit" data-page="2" data-reactid="383">2</button></li><li data-reactid="384"><button class="btn btn-results-3 " type="submit" data-page="3" data-reactid="385">3</button></li><li data-reactid="386"><button class="btn btn-results-4 " type="submit" data-page="4" data-reactid="387">4</button></li><li data-reactid="388"><button class="btn" type="submit" data-reactid="389">...</button>react-empty: 390</li><li data-reactid="391"><button class="btn btn-results-189 " type="submit" data-page="189" data-reactid="392">48</button></li><li data-reactid="393"><button class="btn btn-chevron-right" type="submit" data-reactid="394"><i class="fa fa-chevron-right" data-reactid="395"></i></button></li></ul></div> -->
+                        </div>
+                        <div class="col-xs-12 col-sm-3 column-center">
+                            <div class="workout__subscription">
+                                <button href="#" class="btn btn-workout-subscribe">SUBSCRIBE</button>
+                                <p>Subscribe to receive email notification when new Triathlon Training workouts are published.</p>
+                            </div>
+                            <!-- Ad Space Below is For Mockup Only, Not For Development -->
+                            <div class="ad__space">
+                                <img src="img/ad.png" alt="">
+                                <br />
+                                <br />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -948,7 +974,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js"></script> -->
     <script type="text/javascript" src="js/index.js"></script>
     <!-- <script type="text/javascript" src="./scripts/accordion.js"></script> -->
     <!-- <script type="text/javascript" src="./scripts/club.js"></script> -->

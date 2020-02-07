@@ -25,6 +25,7 @@
 }
 .workout__description {
     line-height: 2.1rem;
+    font-style: italic;
 }
 .notes {
     font-size: 1.3rem;
@@ -32,7 +33,12 @@
     line-height: 1.65rem;
     margin: -0.15rem auto 0;
 }
-  
+
+.set {
+    padding-left: 2rem;
+}
+
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
     .workout__header {
@@ -46,6 +52,7 @@
     .set {
         margin-bottom: 2.5rem;
         font-size: 1.5rem;
+        padding-left: 0;
     }
     .set__description {
         display: inline-block;

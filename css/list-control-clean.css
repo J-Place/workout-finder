@@ -469,18 +469,18 @@
       font-size: 3.4rem;
     }
 
-    .breadcrumb__item {
+    /* .breadcrumb__item {
       margin-right: 6px;
     }
 
     .breadcrumb__items {
       margin-left: 0;
-    }
+    } */
 
-    .breadcrumb__items,
+    /* .breadcrumb__items,
     .breadcrumb__title {
       font-size: 1.2rem;
-    }
+    } */
 
     .list-control {
       margin: 30px 0 20px 0;
