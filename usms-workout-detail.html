@@ -92,7 +92,7 @@
                 <div class="usms-container">
                     <div class="row">
                         <!-- Workout Detail -->
-                        <div class="col-sm-9">
+                        <div class="col-sm-9 gutter">
                             <div class="workout__detail">
                                 <div class="workout__header">
                                     <div class="workout__title">KD: Great Workout</div>
@@ -114,6 +114,7 @@
                                             <div class="set__distance">
                                                 (<span class="distance-total">400</span><span class="distance-unit">y</span>)
                                             </div>
+                                            <!-- If no value, do not render html -->
                                             <div class="set__description">Long and easy warm up</div>
                                         </div>
 
@@ -140,6 +141,7 @@
                                             <div class="set__distance">
                                                 (<span class="distance-total">500</span><span class="distance-unit">y</span>)
                                             </div>
+                                            <!-- If no value, do not render html -->
                                             <div class="set__description">5 x 100 fun set</div>
                                         </div>
                                         <!-- If ( item.listInterval.count > 1 ) -->
@@ -165,6 +167,7 @@
                                             <div class="set__distance">
                                                 (<span class="distance-total">1200</span><span class="distance-unit">y</span>)
                                             </div>
+                                            <!-- If no value, do not render html -->
                                             <div class="set__description">IM Set</div>
                                         </div>
 
@@ -205,7 +208,11 @@
                                         <!-- End if -->
                                         <div class="set__header">
                                             <div class="set__title">KD: Pull Set</div>
-                                            <div class="set__description"></div>
+                                            <div class="set__distance">
+                                                (<span class="distance-total">400</span><span class="distance-unit">y</span>)
+                                            </div>
+                                            <!-- If no value, do not render html -->
+                                            <!-- <div class="set__description"></div> -->
                                         </div>
                                         <div class="interval">
                                             <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
@@ -223,7 +230,11 @@
                                         <!-- End if -->
                                         <div class="set__header">
                                             <div class="set__title">KD: Warm Down</div>
-                                            <div class="set__description"></div>
+                                            <div class="set__distance">
+                                                (<span class="distance-total">200</span><span class="distance-unit">y</span>)
+                                            </div>
+                                            <!-- If no value, do not render html -->
+                                            <!-- <div class="set__description"></div> -->
                                         </div>
                                         <div class="interval">
                                             <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
@@ -234,7 +245,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="workout__footer"></div>
+                                <div class="workout__footer">
+                                    <div class="workout__stats" style="margin-top: 55px; margin-bottom: -25px;">
+                                        <br />
+                                        <!-- <div class="workout_stats--date">01/06/2020</div> -->
+                                        <div class="workout_stats--course">Course: <strong>25y</strong></div>                                        
+                                        <div class="workout_stats--distance">Total Distance: <strong>2700</strong></div>
+                                        <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="workout-customizer show-mobile">
@@ -253,7 +272,8 @@
                             <div class="article-author bg-ltblue">
                                 <div class="article-author__header">
                                     <div class="article-author__image-container bg-gray">
-                                        <img class="article-author__image" src="https://floridagators.com/images/2007/1/1/_swimmingdiving_men_images_bioimg2007_8.jpg?width=300" alt="">
+                                        <!-- <img class="article-author__image" src="https://floridagators.com/images/2007/1/1/_swimmingdiving_men_images_bioimg2007_8.jpg?width=300" alt=""> -->
+                                        <img class="article-author__image" src="https://www.usms.org/pix/1836/1836_640x360.jpg" alt="">
                                     </div>
                                     <h3 class="text-capitalize article-author__title"><small>About the Coach</small><br>Kyle Deery</h3>
                                 </div>

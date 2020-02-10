@@ -139,7 +139,8 @@
 }
 .set__description {
     font-style: italic;
-    margin: -0.2rem auto 0;
+    /* margin: -0.2rem auto 0; */
+    margin: 0 auto;
 }
 .set__description:before {
     content: "–";
@@ -162,9 +163,9 @@
 .notes {
     font-style: italic;
 }
-.notes:before {
-    /* content: ""; */
-}
+/* .notes:before {
+    content: "";
+} */
 .workout__summary {
     max-width: 800px;
     margin-top: 3rem;
@@ -281,10 +282,11 @@
     .set__distance {
         background-color: none;
     }
-    .set__distance:after {
+    /* .set__distance:after {
         content: "–";
         margin: 0 0.25rem 0  0.25rem;
-    }
+    } */
+    
 
     .workout__stats--date:after {
         content: "–";

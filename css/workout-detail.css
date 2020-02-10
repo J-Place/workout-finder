@@ -58,9 +58,9 @@
         display: inline-block;
         margin: 0 auto 0.2rem;
     }
-    .set__description:before {
+    /* .set__description:before {
         content: none;
-    }
+    } */
     .notes {
         display: inline-block;
         font-size: 1.3rem;
