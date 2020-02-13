@@ -1,28 +1,3 @@
-
-
-
-/* Add to Global Button Classes */
-.btn-small {
-    font-size: 1.35rem !important;
-    padding: .6rem 1.3rem;
-    height: 3rem !important;
-    line-height: 2rem !important;
-    text-transform: none;
-    border-radius: 4px;
-}
-
-
-
-
-/* Helper for Main Content collumn – Consider global class for this on all 2-col layouts */
-.gutter {
-    padding-right: 5px;
-}
-
-
-
-
-
 .print-workout {
     margin: 2rem 0 0;
     font-size: 1.4rem;
@@ -33,47 +8,14 @@
 }
 .print-workout .icon {
     position: relative;
-    top: 4px;
+    top: 2px;
     margin-right: 3px;
-    width: 20px;
-    height: 20px;
+    width: auto;
+    height: auto;
     display: inline-block;
-    background-image: url("../img/icon-printer.png");
     background-size: contain;
+    font-size: 17px;
 }
-
-
-
-
-
-/* Workout Customizer is Content Component in Sidebar */
-/* Workout Gloassary is Content Component in Main */
-.workout-customizer {
-    margin: 3rem 0;
-    padding: 3rem 0 1rem;
-    border-top: 1px solid #CCC;
-}
-.workout-glossary {
-    margin: 3rem auto 4rem;
-    padding: 3rem 0;
-    border-top: 1px solid #CCC;
-}
-.workout-customizer h3,
-.workout-glossary h3 {
-    font-size: 2.0rem;
-    color: #0070c0;
-    margin-top: 0;
-}
-.workout-customizer p,
-.workout-glossary p {
-    line-height: 2.1rem;
-    margin: 0 auto 2rem;
-}
-
-
-
-
-
 .workout__header {
     position: relative;
     margin: 0.5rem auto 3rem;
@@ -97,8 +39,6 @@
 }
 .workout__stats--date:after {
     content: "";
-    /* font-weight: normal; */
-    /* margin: 0 -.25rem 0 1.25rem; */
 }
 .workout .view-details {
     margin: 0 auto 2.25rem;
@@ -106,15 +46,10 @@
 .workout__footer button {
     margin: 3.5rem 0 3rem;
 }
-
-
-
-
 .set {
     font-size: 1.35rem;
     line-height: 1.8rem;
     margin: 0 auto 2.5rem;
-    /* padding-left: 2rem; */
 }
 .set__header {
     margin: 0 0 1.25rem -2rem;
@@ -139,7 +74,6 @@
 }
 .set__description {
     font-style: italic;
-    /* margin: -0.2rem auto 0; */
     margin: 0 auto;
 }
 .set__description:before {
@@ -149,10 +83,6 @@
 .set__distance {
     margin-left: 0;
 }
-
-
-
-
 .pace:before {
     position: relative;
     content: "@";
@@ -163,9 +93,6 @@
 .notes {
     font-style: italic;
 }
-/* .notes:before {
-    content: "";
-} */
 .workout__summary {
     max-width: 800px;
     margin-top: 3rem;
@@ -186,11 +113,11 @@
     margin-bottom: -1.9rem;
 }
 .group-repeat:after {
-  position: relative;
-  content: "x";
-  display: inline-block;
-  margin-left: 5px;
-  width: auto;
+    position: relative;
+    content: "x";
+    display: inline-block;
+    margin-left: 5px;
+    width: auto;
 }
 .length-repeat:after {
     position: relative;
@@ -215,42 +142,7 @@
     margin-top: 5px;
 }
 
-
-
-/* DEV NOTES */
-
-/* Override usms style sheet that sets page header height. Allows longer header text. */
-.page-header {
-    height: auto;
-}
-
-/* Mock up helper class. Check for existing or alternate functionality in dev. */
-/* Used on 'Make It Yours' CTA that is duplicated in Sidebar and in Main under Workout */
-.show-mobile {
-    display: block;
-}
-.hide-mobile {
-    display: none;
-}
 @media only screen and (min-width: 768px) {
-    .show-mobile {
-        display: none;
-    }
-    .hide-mobile {
-        display: block;
-    }
-    .gutter {
-        padding-right: 9rem;
-    }
-    .page-header {
-        min-height: 200px;
-    }
-
-}
-
-
-@media only screen and (min-width: 768px) {
-
     .print-workout {
         position: absolute;
         font-size: 1.2rem;
@@ -258,7 +150,6 @@
         top: 0.3rem;
         right: 0;
     }
-
     .workout__stats > * {
         display: inline-block;
         margin: 0 1rem 0 0;
@@ -282,16 +173,49 @@
     .set__distance {
         background-color: none;
     }
-    /* .set__distance:after {
-        content: "–";
-        margin: 0 0.25rem 0  0.25rem;
-    } */
-    
-
     .workout__stats--date:after {
         content: "–";
         font-weight: normal;
         margin: 0 -.25rem 0 1.25rem;
     }
+}
 
+/* Helper class. Check for existing or alternate functionality in dev. */
+/* Used on 'Make It Yours' CTA that is duplicated in Sidebar and in Main under Workout */
+.show-mobile {
+    display: block;
+}
+.hide-mobile {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .show-mobile {
+        display: none;
+    }
+    .hide-mobile {
+        display: block;
+    }
+}
+/* Workout Customizer is Content Component in Sidebar */
+.workout-customizer {
+    margin: 3rem 0;
+    padding: 3rem 0 1rem;
+    border-top: 1px solid #CCC;
+}
+/* Workout Glossary is Content Component in Main */
+.workout-glossary {
+    margin: 3rem auto 4rem;
+    padding: 3rem 0;
+    border-top: 1px solid #CCC;
+}
+.workout-customizer h3,
+.workout-glossary h3 {
+    font-size: 2.0rem;
+    color: #0070c0;
+    margin-top: 0;
+}
+.workout-customizer p,
+.workout-glossary p {
+    line-height: 2.1rem;
+    margin: 0 auto 2rem;
 }

@@ -2,7 +2,7 @@
 
 
 /* /////////////////////////////////////////// */
-/* This can all be scoped to '.workout-detail' */
+/* This can all be scoped to '.workout__detail' */
 /* /////////////////////////////////////////// */
 
 
@@ -33,11 +33,9 @@
     line-height: 1.65rem;
     margin: -0.15rem auto 0;
 }
-
 .set {
     padding-left: 2rem;
 }
-
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
@@ -58,9 +56,6 @@
         display: inline-block;
         margin: 0 auto 0.2rem;
     }
-    /* .set__description:before {
-        content: none;
-    } */
     .notes {
         display: inline-block;
         font-size: 1.3rem;
@@ -80,7 +75,7 @@
     }
 }
   
-  /* Print Styles */
+/* Print Styles */
 @media only print {
     .workout__detail {
         margin-top: -3rem;
