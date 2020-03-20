@@ -77,9 +77,12 @@
   
 /* Print Styles */
 @media only print {
-    .workout__detail {
-        margin-top: -3rem;
+    .workout-customizer {
+        display: none;
     }
+    /* .workout__detail {
+        margin-top: -3rem;
+    } */
     .workout__header {
         margin-bottom: 1rem;
     }
