@@ -7,12 +7,18 @@
     <title>Workout Detail | U.S. Masters Swimming</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/usms.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/print.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/workout.css">
     <link rel="stylesheet" type="text/css" href="css/workout-detail.css">
     <link rel="stylesheet" type="text/css" href="css/add-ons.css">
+
+
+
+
 </head>
 <body>
     <div id="main-container">
@@ -93,15 +99,15 @@
                 <div class="usms-container">
                     <div class="row">
                         <!-- Workout Detail -->
-                        <div class="col-sm-9 gutter">
+                        <div class="col-sm-9">
                             <div class="workout__detail">
                                 <div class="workout__header">
                                     <div class="workout__title">KD: Great Workout</div>
                                     <div class="workout__stats">
-                                        <div class="workout_stats--date">01/06/2020</div>
-                                        <div class="workout_stats--course">Course: <strong>25y</strong></div>
-                                        <div class="workout_stats--distance">Distance: <strong>2,700</strong></div>
-                                        <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
+                                        <div class="workout__stats--date">01/06/2020</div>
+                                        <div class="workout__stats--course">Course: <strong>25y</strong></div>
+                                        <div class="workout__stats--distance">Distance: <strong>2,700</strong></div>
+                                        <div class="workout__stats--time">Time: <strong>4h 50m</strong></div>
                                     </div>
                                     <div class="workout__description">A great way to start off the new year. Focus on sprints.</div>
                                     <div class="print-workout">
@@ -153,6 +159,24 @@
                                         <!-- If ( item.listInterval.count > 1 ) -->
                                             <!-- <div class="group-repeat">1</div> -->
                                         <!-- End if -->
+                                        <div class="interval">
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
+                                                <div class="length-repeat">5</div>
+                                            <!-- End if -->
+                                            <div class="distance" id="distanceByUnit">100</div>   
+                                            <div class="stroke" id="strokeType">Free</div>
+                                            <div class="pace">2:00</div>
+                                            <div class="notes">Holding your fastest pace</div>
+                                        </div>
+                                        <div class="interval">
+                                            <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
+                                                <div class="length-repeat">5</div>
+                                            <!-- End if -->
+                                            <div class="distance" id="distanceByUnit">100</div>   
+                                            <div class="stroke" id="strokeType">Free</div>
+                                            <div class="pace">2:00</div>
+                                            <div class="notes">Holding your fastest pace</div>
+                                        </div>
                                         <div class="interval">
                                             <!-- if ( lengthRepeat.val > 1 ) ... then show html block -->
                                                 <div class="length-repeat">5</div>
@@ -254,22 +278,22 @@
                                 <div class="workout__footer">
                                     <div class="workout__stats" style="margin-top: 50px; margin-bottom: -25px;">
                                         <br />
-                                        <!-- <div class="workout_stats--date">01/06/2020</div> -->
-                                        <!-- <div class="workout_stats--course">Course: <strong>25y</strong></div>                                         -->
-                                        <div class="workout_stats--distance">Total Distance: <strong>2,700</strong></div>
-                                        <div class="workout_stats--time">Time: <strong>4h 50m</strong></div>
+                                        <!-- <div class="workout__stats--date">01/06/2020</div> -->
+                                        <!-- <div class="workout__stats--course">Course: <strong>25y</strong></div>                                         -->
+                                        <div class="workout__stats--distance">Total Distance: <strong>2,700</strong></div>
+                                        <div class="workout__stats--time">Time: <strong>4h 50m</strong></div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="workout-customizer show-mobile">
+                            <div class="workout-customizer show-mobileXXX ">
                                 <h3>Make It Yours</h3>
                                 <p>Want to customize this workout, or load it to your device? We’ve partnered with Swim.com to bring you integrated swim tracking and customizable workouts.</p>
                                 <button href="#" class="btn btn-primary btn-small">View on Swim.com</button>
                                 <img width="135px" style="display: block; margin: 1.3rem 0;" src="https://theme.zdassets.com/theme_assets/10973/6c2ebb46c65bea38ae9061a56ab03f9ea884e611.png" alt="">
                             </div>
 
-                            <div class="workout-glossary">
+                            <div class="workout-glossary visible-xs-*">
                                 <h3>Glossary of Terms</h3>
                                 <p>We understand, sometimes a swim workout can be difficult to interpret. View a glossary of terms frequently used in our workouts.</p>
                                 <button href="#" class="btn btn-primary btn-small">View Glossary</button>
@@ -292,7 +316,7 @@
                         </div>
                         <!-- Sidebar -->
                         <div class="col-sm-3 column-center">
-                            <div class="workout-customizer hide-mobile">
+                            <div class="workout-customizer hide-mobileXXX hidden-xs">
                                 <h3>Make It Yours</h3>
                                 <p>Want to customize this workout, or load it to your device? We’ve partnered with Swim.com to bring you integrated swim tracking and customizable workouts.</p>
                                 <button href="#" class="btn btn-primary btn-small">View on Swim.com</button>
