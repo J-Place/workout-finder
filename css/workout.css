@@ -159,6 +159,9 @@
         top: 0.3rem;
         right: 0;
     }
+    .workout__header {
+        padding-top: 5rem;
+    }
     .workout__stats > * {
         display: inline-block;
         margin: 0 1rem 0 0;
