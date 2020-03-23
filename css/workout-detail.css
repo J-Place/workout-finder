@@ -87,49 +87,49 @@
   
     /* Print Styles */
     @media only print {
-    .workout__detail {
-        /* margin-top: -3rem; */
-    }
+        .workout__detail {
+            /* margin-top: -3rem; */
+        }
 
-    .workout__header {
-        margin-bottom: 1rem;
-    }
+        .workout__header {
+            margin-bottom: 1rem;
+        }
 
-    .workout__stats {
-        margin-bottom: 0.5rem;
-    }
+        .workout__stats {
+            margin-bottom: 0.5rem;
+        }
 
-    .notes {
-        display: inline-block;
-    }
+        .notes {
+            display: inline-block;
+        }
 
-    .set {
-        margin-bottom: 2.5rem;
-    }
+        .set {
+            margin-bottom: 2.5rem;
+        }
 
-    .set__header {
-        margin-bottom: 0;
-    }
+        .set__header {
+            margin-bottom: 0;
+        }
 
-    .set__description,
-    .set__distance,
-    .set__title {
-        display: inline-block;
-    }
+        .set__description,
+        .set__distance,
+        .set__title {
+            display: inline-block;
+        }
 
-    .breadcrumb__container,
-    .workout__download-pdf,
-    .workout-glossary,
-    .workout-customizer,
-    .workout-customizer+img,
-    .article-author,
-    #footerOverlay {
-        display: none;
-    }
+        .breadcrumb__container,
+        .workout__download-pdf,
+        .workout-glossary,
+        .workout-customizer,
+        .workout-customizer+img,
+        .article-author,
+        #footerOverlay {
+            display: none;
+        }
 
-    a.mega-main-menu__logo::after {
-        content: "";
-    }
+        a.mega-main-menu__logo::after {
+            content: "";
+        }
     }
 
 /* } */

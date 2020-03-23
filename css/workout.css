@@ -283,10 +283,10 @@
   }
   
   @media only screen and (min-width: 992px) {
-    .workout__detail {
-        .workout__stats > * {
+    /* .workout__detail { */
+        .workout__detail .workout__stats > * {
             display: inline-block;
             margin: 0 1rem 0 0;
         }
-    }
+    /* } */
   }
