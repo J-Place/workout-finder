@@ -12,84 +12,84 @@
     margin: 4rem auto 6rem;
     padding-top: 6rem;
     border-top: 1px solid #CCC;
-}
-
-
-/* DEV NOTES */
-/* Needs scoping class. Filter Submit Button for Workout Finder is positioned differently than Club Finder. This needs a class to scope the styling differences. We need Bonfire to specifiy where in the dom tree this class can be added. */
-.list-control {
+  }
+  
+  
+  /* DEV NOTES */
+  /* Needs scoping class. Filter Submit Button for Workout Finder is positioned differently than Club Finder. This needs a class to scope the styling differences. We need Bonfire to specifiy where in the dom tree this class can be added. */
+  .list-control {
     margin-top: 15px;
-}
-.list-control-search__input--button {
+  }
+  .list-control-search__input.list-control-search__input--button {
     flex: none;
     position: relative;
     bottom: 0;
     margin: 1.5rem 0 5rem;
-}
-@media only screen and (min-width: 768px) {
-    .list-control-search__input--button {
+  }
+  @media only screen and (min-width: 768px) {
+    .list-control-search__input.list-control-search__input--button {
         margin: 20px 0 15px 15px;
     }
-}
-/* End scoping class */
-
-
-
-
-
-
-.btn-workout-subscribe {
+  }
+  /* End scoping class */
+  
+  
+  
+  
+  
+  
+  .btn-workout-subscribe {
     background-color: #d2202e;
     color: #FFF;
-}
-.btn-workout-unsubscribe {
+  }
+  .btn-workout-unsubscribe {
     background-color: green;
     color: #FFF;
-}
-.workout__subscription {
+  }
+  .workout__subscription {
     text-align: center;
     padding: 4rem 2rem;
     border-top: 1px solid #CCC;
-}
-.workout__subscription p {
+  }
+  .workout__subscription p {
     font-size: 1.4rem;;
     line-height: 2rem;
     margin-bottom: 0;
     padding: 1.5rem 0 1rem;
-}
-.workout__subscription a {
+  }
+  .workout__subscription a {
     display: block;
     text-decoration: underline;
     text-align: center;
     padding: 0.5rem 0 0;
-}
-.workout__subscription a:hover {
+  }
+  .workout__subscription a:hover {
     color: #0068ad;
     text-decoration: underline;
-}
-
-.workout-list {
+  }
+  
+  .workout-list {
     margin: 3rem auto 6rem;
-}
-
-.workout-list-item {
+  }
+  
+  .workout-list-item {
     position: relative;
     padding: 3rem 1rem 1rem;
     margin: 0 0 1rem;
     border-top: 1px solid #CCC;
-}
-
-.workout-list-item:first-of-type {
+  }
+  
+  .workout-list-item:first-of-type {
     border: 0 none;
     padding-top: 1rem;
-}
-
-.set {
+  }
+  
+  .set {
     padding-left: 0;
-}
-
-/* Small Devices, Tablets */
- @media only screen and (min-width: 768px) {
+  }
+  
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) {
     .workout-list {
         margin: 0 auto;
         padding-top: 0;
@@ -115,4 +115,5 @@
     .results-list__pagination-container {
         margin-bottom: 8rem;
     }
-}
+  }
+  
