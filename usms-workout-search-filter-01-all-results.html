@@ -101,69 +101,71 @@
 
                         <!-- Search Filters -->
                         <div class="col-xs-12">
-                            <div class="list-control">
-                                <div class="list-control-search">
-                                    <div class="list-control-search__header">
-                                        <!-- <span class="tag-list--title">Filters:</span> -->
-                                        <div class="list-control-search--tags"></div><i class="fa fa-refresh fa-spin list-control-search--summary-loading" style="display:none;"></i>
-                                        <div class="list-control-search--summary">
-                                            Showing <strong>1-5</strong> of <strong>247</strong> workouts<!-- for <strong> 25y Course</strong>, <strong>Ladder</strong> -->
-                                        </div>
-                                    </div>
-                                    <div class="list-control-search-mobile__toggle">Narrow Your Results</div>
-                                    <div class="list-control-search__content form-group is-flex" style="display: flex;">
-                                        <div class="list-control-search__input list-control-search__input--course">
-                                            <label for="search-filter__club-name">Filter by Course</label>
-                                            <div class="input-group">
-                                                <select id="search-filter__range" name="search-filter__range">
-                                                    <option selected="" value="">Select a Course</option>
-                                                    <option value="25y">25y</option>
-                                                    <option value="25m">25m</option>
-                                                    <option value="50m">50m</option>
-                                                </select>
+                            <div class="online-workouts__filter">
+                                <div class="list-control">
+                                    <div class="list-control-search">
+                                        <div class="list-control-search__header">
+                                            <!-- <span class="tag-list--title">Filters:</span> -->
+                                            <div class="list-control-search--tags"></div><i class="fa fa-refresh fa-spin list-control-search--summary-loading" style="display:none;"></i>
+                                            <div class="list-control-search--summary">
+                                                Showing <strong>1-5</strong> of <strong>247</strong> workouts<!-- for <strong> 25y Course</strong>, <strong>Ladder</strong> -->
                                             </div>
                                         </div>
-                                        <div class="list-control-search__input list-control-search__input--distance">
-                                            <label for="search-filter__range">Filter by Distance</label>
-                                            <div class="input-group">
-                                                <select id="search-filter__range" name="search-filter__range">
-                                                    <option selected="" value="">Select a Distance</option>
-                                                    <option value="">500-999</option>
-                                                    <option value="">1,000-1,499</option>
-                                                    <option value="">1,500-1,999</option>
-                                                    <option value="">2,000-2,499</option>
-                                                    <option value="">2,500-2,999</option>
-                                                    <option value="">3,000-3,499</option>
-                                                    <option value="">3,500-3,999</option>
-                                                    <option value="">4,000-4,499</option>
-                                                    <option value="">4,500-4,999</option>
-                                                    <option value="">5,000-5,499</option>
-                                                    <option value="">5,500-5,999</option>
-                                                    <option value="">Over 6,000</option>
-                                                </select>
+                                        <div class="list-control-search-mobile__toggle">Narrow Your Results</div>
+                                        <div class="list-control-search__content form-group is-flex" style="display: flex;">
+                                            <div class="list-control-search__input list-control-search__input--course">
+                                                <label for="search-filter__club-name">Filter by Course</label>
+                                                <div class="input-group">
+                                                    <select id="search-filter__range" name="search-filter__range">
+                                                        <option selected="" value="">Select a Course</option>
+                                                        <option value="25y">25y</option>
+                                                        <option value="25m">25m</option>
+                                                        <option value="50m">50m</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="list-control-search__input list-control-search__input--set-type">
-                                            <label for="search-filter__location">Filter by Set Type</label>
-                                            <div class="input-group">
-                                                <select id="search-filter__range" name="search-filter__range">
-                                                    <option selected="">Select a Set Type</option>
-                                                    <option>Ladder</option>
-                                                    <option>Descend</option>
-                                                    <option>Repeats</option>
-                                                    <option>Test Set</option>
-                                                    <option>Kick Set</option>
-                                                    <option>Sprint Set</option>
-                                                    <option>Distance Set</option>
-                                                    <option>Pull Set</option>
-                                                    <option>Drill Set</option>
-                                                    <option>V02 Max Set</option>
-                                                </select>
+                                            <div class="list-control-search__input list-control-search__input--distance">
+                                                <label for="search-filter__range">Filter by Distance</label>
+                                                <div class="input-group">
+                                                    <select id="search-filter__range" name="search-filter__range">
+                                                        <option selected="" value="">Select a Distance</option>
+                                                        <option value="">500-999</option>
+                                                        <option value="">1,000-1,499</option>
+                                                        <option value="">1,500-1,999</option>
+                                                        <option value="">2,000-2,499</option>
+                                                        <option value="">2,500-2,999</option>
+                                                        <option value="">3,000-3,499</option>
+                                                        <option value="">3,500-3,999</option>
+                                                        <option value="">4,000-4,499</option>
+                                                        <option value="">4,500-4,999</option>
+                                                        <option value="">5,000-5,499</option>
+                                                        <option value="">5,500-5,999</option>
+                                                        <option value="">Over 6,000</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="list-control-search__input list-control-search__input--button align-self-end">
-                                            <div class="input-group">
-                                                <button type="button" class="btn btn-primary" id="listSearchSubmit">Submit</button>
+                                            <div class="list-control-search__input list-control-search__input--set-type">
+                                                <label for="search-filter__location">Filter by Set Type</label>
+                                                <div class="input-group">
+                                                    <select id="search-filter__range" name="search-filter__range">
+                                                        <option selected="">Select a Set Type</option>
+                                                        <option>Ladder</option>
+                                                        <option>Descend</option>
+                                                        <option>Repeats</option>
+                                                        <option>Test Set</option>
+                                                        <option>Kick Set</option>
+                                                        <option>Sprint Set</option>
+                                                        <option>Distance Set</option>
+                                                        <option>Pull Set</option>
+                                                        <option>Drill Set</option>
+                                                        <option>V02 Max Set</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="list-control-search__input list-control-search__input--button align-self-end">
+                                                <div class="input-group">
+                                                    <button type="button" class="btn btn-primary" id="listSearchSubmit">Submit</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
