@@ -3,7 +3,7 @@
 /* /////////////////////////////////////////// */
 
 
-/* .workout__detail { */
+.workout__detail {
 
     .workout__header {
       position: relative;
@@ -132,4 +132,4 @@
         }
     }
 
-/* } */
+}
