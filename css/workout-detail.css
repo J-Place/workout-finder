@@ -1,7 +1,9 @@
 /* /////////////////////////////////////////// */
 /* This can all be scoped to '.workout__detail' */
 /* /////////////////////////////////////////// */
-.workout__detail {
+
+
+/* .workout__detail { */
 
     .workout__header {
       position: relative;
@@ -130,4 +132,4 @@
     }
     }
 
-}
+/* } */
