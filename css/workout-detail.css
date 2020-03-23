@@ -88,7 +88,7 @@
     /* Print Styles */
     @media only print {
     .workout__detail {
-        margin-top: -3rem;
+        /* margin-top: -3rem; */
     }
 
     .workout__header {
