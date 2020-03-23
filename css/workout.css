@@ -240,12 +240,14 @@
       display: block;
     }
   
-    .online-workouts__filter {
+    /* Commented Out for Flat Mockups Only - Keep in React Build */
+    /* .online-workouts__filter {
       position: absolute;
       width: 100%;
       top: -200px
-    }
-  }
+    } */
+
+}
   
   /* Workout Customizer is Content Component in Sidebar */
   .workout-customizer {
