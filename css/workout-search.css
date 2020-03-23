@@ -1,14 +1,4 @@
-
-
-
-/* ///////////////////////////////////////// */
-/* This can all be scoped to '.workout-list' */
-/* ///////////////////////////////////////// */
-
-
-/* DEV NOTES */
-/* Make this change in global style sheet */
-.results-list__pagination-container {
+.workout-search .results-list__pagination-container {
     margin: 4rem auto 6rem;
     padding-top: 6rem;
     border-top: 1px solid #CCC;
@@ -32,8 +22,6 @@
     }
   }
   /* End scoping class */
-  
-  
   
   
   
@@ -112,7 +100,7 @@
     .workout__subscription a {
         text-align: left;
     }
-    .results-list__pagination-container {
+    .workout-search .results-list__pagination-container {
         margin-bottom: 8rem;
     }
   }
