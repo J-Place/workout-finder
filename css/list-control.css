@@ -188,7 +188,7 @@
   .list-control-search:after {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 0;
     right: 0;
     background-color: #ddd;
@@ -203,7 +203,7 @@
     /*font-size: 12px;*/
     font-size: 1.2rem;
     /* margin-top: -7px; */
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 10px;
     margin-left: 5px;
     text-align: center;
@@ -243,7 +243,7 @@
     display: block;
     width: calc(100% + 20px);
     /* margin: 0 -10px; */
-    margin: -10px -10px 0;
+    margin: -15px -10px 0;
     padding: 18px 15px 18px 40px;
     /*font-size: 16px;*/
     font-size: 1.6rem;
