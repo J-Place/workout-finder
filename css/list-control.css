@@ -303,7 +303,7 @@
     position: absolute;
     bottom: 3.0rem;
   }
-
+ 
   .list-control-search__input.list-control-search__input--button {
     flex: none;
     position: relative;
@@ -568,15 +568,14 @@
       position: relative;
       bottom: 0;
       flex-grow: initial;
-      margin-top: 20px;
+      /* margin-top: 20px; */
+      margin: 20px 0 15px 15px;
       align-self: flex-end;
     }
 
-    @media only screen and (min-width: 768px) {
-      .list-control-search__input.list-control-search__input--button {
-          margin: 20px 0 15px 15px;
-      }
-    }
+    /* .list-control-search__input.list-control-search__input--button {
+        margin: 20px 0 15px 15px;
+    } */
   
     .list-control-filter__content .check-list {
       /*flex-basis: 25%;*/
