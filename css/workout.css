@@ -1,292 +1,294 @@
 .print-workout {
-  margin: 2rem 0 0;
-  font-size: 1.4rem;
-  text-decoration: underline;
-}
-
-.print-workout a {
-  color: #666;
-}
-
-.print-workout .icon {
-  position: relative;
-  top: 2px;
-  margin-right: 3px;
-  width: auto;
-  height: auto;
-  display: inline-block;
-  background-size: contain;
-  font-size: 17px;
-}
-
-.workout__header {
-  position: relative;
-  margin: 0.5rem auto 3rem;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-.workout__title {
-  font-weight: bold;
-  font-size: 1.8rem;
-  line-height: 2.1rem;
-  margin: 0 auto 0.5rem;
-}
-
-.workout__stats {
-  margin: 0 auto 1.5rem;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-}
-
-.workout__stats>* {
-  display: block;
-  margin: 0 1rem 0 0;
-}
-
-.workout__stats--date:after {
-  content: "";
-}
-
-.workout__header .view-details {
-  width: 160px;
-}
-
-.workout .view-details {
-  margin: 0 auto 2.25rem;
-}
-
-.workout__footer button {
-  margin: 3.5rem 0 3rem;
-}
-
-.set {
-  font-size: 1.35rem;
-  line-height: 1.8rem;
-  margin: 0 auto 2.5rem;
-}
-
-.set__header {
-  margin: 0 0 1.25rem -2rem;
-  padding: .3rem .2rem .3rem 1rem;
-  background-color: aliceblue;
-}
-
-.set__title {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  font-weight: bold;
-  margin: 0 auto 0.2rem;
-}
-
-.set__distance {
-  margin-left: 0.35rem;
-}
-
-.set__distance:after {
-  content: none;
-}
-
-.set__description,
-.set__distance {
-  display: inline-block;
-}
-
-.set__description {
-  font-style: italic;
-  margin: 0 auto;
-}
-
-.set__description:before {
-  content: "–";
-  margin: 0 0.75rem 0 .5rem;
-}
-
-.set__distance {
-  margin-left: 0;
-}
-
-.pace:before {
-  position: relative;
-  content: "@";
-  display: inline-block;
-  width: auto;
-  margin-right: 5px;
-}
-
-.notes {
-  font-style: italic;
-}
-
-.workout__summary {
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.workout__detail {
-  margin: 5rem auto;
-}
-
-.length-repeat,
-.distance,
-.stroke,
-.pace {
-  display: inline-block !important;
-}
-
-.group-repeat {
-  margin-top: 3px;
-}
-
-.group-repeat {
-  margin-bottom: -1.9rem;
-}
-
-.group-repeat:after {
-  position: relative;
-  content: "x";
-  display: inline-block;
-  margin: 0 5px;
-  width: auto;
-}
-
-.length-repeat:after {
-  position: relative;
-  content: "x";
-  display: inline-block;
-  width: auto;
-  margin: 0 5px;
-}
-
-.interval {
-  margin-top: 3px;
-}
-
-.interval.repeat {
-  line-height: 1.8rem;
-  border-left: 1px solid #cccccc;
-  margin-top: 0;
-  margin-left: 2.9rem;
-  padding-left: 0.8rem;
-  padding-top: 0.1rem;
-  padding-bottom: 0.2rem;
-}
-
-.interval.repeat+.interval:not(.repeat) {
-  margin-top: 5px;
-}
-
-@media only screen and (min-width: 768px) {
-  .print-workout {
-    position: absolute;
-    font-size: 1.2rem;
-    margin-top: 0;
-    top: 0.3rem;
-    right: 0;
+    margin: 2rem 0 0;
+    font-size: 1.4rem;
+    text-decoration: underline;
   }
-
-  .workout__stats>* {
+  
+  .print-workout a {
+    color: #666;
+  }
+  
+  .print-workout .icon {
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+    width: auto;
+    height: auto;
     display: inline-block;
+    background-size: contain;
+    font-size: 17px;
+  }
+  
+  .workout__header {
+    position: relative;
+    margin: 0.5rem auto 3rem;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .workout__title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin: 0 auto 0.5rem;
+  }
+  
+  .workout__stats {
+    margin: 0 auto 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  
+  .workout__stats>* {
+    display: block;
     margin: 0 1rem 0 0;
   }
-
-  .notes:before {
-    content: "–";
-    margin: 0 0.65rem 0 0.3rem;
-  }
-
-  .set {
-    padding-left: 0;
-  }
-
-  .set__header {
-    margin: 0 0 0.5rem -2rem;
-    padding: .1rem .2rem 0 0;
-    background: none;
-  }
-
-  .set__title {
-    display: inline-block;
-    background-color: none;
-  }
-
-  .set__distance {
-    background-color: none;
-  }
-
+  
   .workout__stats--date:after {
+    content: "";
+  }
+  
+  .workout__header .view-details {
+    width: 160px;
+  }
+  
+  .workout .view-details {
+    margin: 0 auto 2.25rem;
+  }
+  
+  .workout__footer button {
+    margin: 3.5rem 0 3rem;
+  }
+  
+  .set {
+    font-size: 1.35rem;
+    line-height: 1.8rem;
+    margin: 0 auto 2.5rem;
+  }
+  
+  .set__header {
+    margin: 0 0 1.25rem -2rem;
+    padding: .3rem .2rem .3rem 1rem;
+    background-color: aliceblue;
+  }
+  
+  .set__title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    margin: 0 auto 0.2rem;
+  }
+  
+  .set__distance {
+    margin-left: 0.35rem;
+  }
+  
+  .set__distance:after {
+    content: none;
+  }
+  
+  .set__description,
+  .set__distance {
+    display: inline-block;
+  }
+  
+  .set__description {
+    font-style: italic;
+    margin: 0 auto;
+  }
+  
+  .set__description:before {
     content: "–";
-    font-weight: normal;
-    margin: 0 -.25rem 0 1.25rem;
+    margin: 0 0.75rem 0 .5rem;
   }
-}
-
-/* Helper class. Check for existing or alternate functionality in dev. */
-/* Used on 'Make It Yours' CTA that is duplicated in Sidebar and in Main under Workout */
-.show-mobile {
-  display: block;
-}
-
-.hide-mobile {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
+  
+  .set__distance {
+    margin-left: 0;
+  }
+  
+  .pace:before {
+    position: relative;
+    content: "@";
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  .notes {
+    font-style: italic;
+  }
+  
+  .workout__summary {
+    max-width: 800px;
+    margin-top: 3rem;
+  }
+  
+  .workout__detail {
+    margin: 5rem auto;
+  }
+  
+  .length-repeat,
+  .distance,
+  .stroke,
+  .pace {
+    display: inline-block !important;
+  }
+  
+  .group-repeat {
+    margin-top: 3px;
+  }
+  
+  .group-repeat {
+    margin-bottom: -1.9rem;
+  }
+  
+  .group-repeat:after {
+    position: relative;
+    content: "x";
+    display: inline-block;
+    margin: 0 5px;
+    width: auto;
+  }
+  
+  .length-repeat:after {
+    position: relative;
+    content: "x";
+    display: inline-block;
+    width: auto;
+    margin: 0 5px;
+  }
+  
+  .interval {
+    margin-top: 3px;
+  }
+  
+  .interval.repeat {
+    line-height: 1.8rem;
+    border-left: 1px solid #cccccc;
+    margin-top: 0;
+    margin-left: 2.9rem;
+    padding-left: 0.8rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+  }
+  
+  .interval.repeat+.interval:not(.repeat) {
+    margin-top: 5px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .print-workout {
+      position: absolute;
+      font-size: 1.2rem;
+      margin-top: 0;
+      top: 0.3rem;
+      right: 0;
+    }
+  
+    .workout__stats>* {
+      display: inline-block;
+      margin: 0 1rem 0 0;
+    }
+  
+    .notes:before {
+      content: "–";
+      margin: 0 0.65rem 0 0.3rem;
+    }
+  
+    .set {
+      padding-left: 0;
+    }
+  
+    .set__header {
+      margin: 0 0 0.5rem -2rem;
+      padding: .1rem .2rem 0 0;
+      background: none;
+    }
+  
+    .set__title {
+      display: inline-block;
+      background-color: none;
+    }
+  
+    .set__distance {
+      background-color: none;
+    }
+  
+    .workout__stats--date:after {
+      content: "–";
+      font-weight: normal;
+      margin: 0 -.25rem 0 1.25rem;
+    }
+  }
+  
+  /* Helper class. Check for existing or alternate functionality in dev. */
+  /* Used on 'Make It Yours' CTA that is duplicated in Sidebar and in Main under Workout */
   .show-mobile {
-    display: none;
-  }
-
-  .hide-mobile {
     display: block;
   }
-
-  .online-workouts__filter {
-    position: absolute;
-    width: 100%;
-    top: -200px
+  
+  .hide-mobile {
+    display: none;
   }
-}
+  
+  @media only screen and (min-width: 768px) {
+    .show-mobile {
+      display: none;
+    }
+  
+    .hide-mobile {
+      display: block;
+    }
+  
+    /* Commented Out for Flat Mockups Only - Keep in React Build */
+    /* .online-workouts__filter {
+      position: absolute;
+      width: 100%;
+      top: -200px
+    } */
 
-/* Workout Customizer is Content Component in Sidebar */
-.workout-customizer {
-  margin: 3rem 0;
-  padding: 3rem 0 1rem;
-  border-top: 1px solid #CCC;
 }
-
-/* Workout Glossary is Content Component in Main */
-.workout-glossary {
-  margin: 3rem auto 4rem;
-  padding: 3rem 0;
-  border-top: 1px solid #CCC;
-}
-
-.workout-customizer h3,
-.workout-glossary h3 {
-  font-size: 2.0rem;
-  color: #0070c0;
-  margin-top: 0;
-}
-
-.workout-customizer p,
-.workout-glossary p {
-  line-height: 2.1rem;
-  margin: 0 auto 2rem;
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
+  
+  /* Workout Customizer is Content Component in Sidebar */
   .workout-customizer {
-    max-width: none;
-    border: none;
+    margin: 3rem 0;
+    padding: 3rem 0 1rem;
+    border-top: 1px solid #CCC;
   }
-}
-
-@media only screen and (min-width: 992px) {
-  .workout__detail {
-      .workout__stats > * {
-          display: inline-block;
-          margin: 0 1rem 0 0;
-      }
+  
+  /* Workout Glossary is Content Component in Main */
+  .workout-glossary {
+    margin: 3rem auto 4rem;
+    padding: 3rem 0;
+    border-top: 1px solid #CCC;
   }
-}
+  
+  .workout-customizer h3,
+  .workout-glossary h3 {
+    font-size: 2.0rem;
+    color: #0070c0;
+    margin-top: 0;
+  }
+  
+  .workout-customizer p,
+  .workout-glossary p {
+    line-height: 2.1rem;
+    margin: 0 auto 2rem;
+  }
+  
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) {
+    .workout-customizer {
+      max-width: none;
+      border: none;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    /* .workout__detail { */
+        .workout__detail .workout__stats > * {
+            display: inline-block;
+            margin: 0 1rem 0 0;
+        }
+    /* } */
+  }
