@@ -1,7 +1,12 @@
 
 .online-workouts__filter {
+
   .nav li {
     float: left;
+  }
+
+  .list-control {
+    margin-top: 15px;
   }
 
   .list-control .form-control {
@@ -299,6 +304,13 @@
     bottom: 3.0rem;
   }
 
+  .list-control-search__input.list-control-search__input--button {
+    flex: none;
+    position: relative;
+    bottom: 0;
+    margin: 1.5rem 0 5rem;
+  }
+
   .list-control input {
     /*font-size: 14px;*/
     font-size: 1.4rem;
@@ -499,7 +511,9 @@
 }
   /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+
   .online-workouts__filter {
+
     .list-control {
       margin: 15px 0 20px 0;
     }
@@ -558,6 +572,12 @@
       align-self: flex-end;
     }
 
+    @media only screen and (min-width: 768px) {
+      .list-control-search__input.list-control-search__input--button {
+          margin: 20px 0 15px 15px;
+      }
+    }
+  
     .list-control-filter__content .check-list {
       /*flex-basis: 25%;*/
     }
