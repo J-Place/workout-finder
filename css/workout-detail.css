@@ -1,135 +1,133 @@
 /* /////////////////////////////////////////// */
 /* This can all be scoped to '.workout__detail' */
 /* /////////////////////////////////////////// */
-
-
 .workout__detail {
 
+  .workout__header {
+    position: relative;
+    margin: 0rem auto 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: none;
+  }
+
+  .workout__title {
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+  }
+
+  .workout_stats--date {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .workout__stats:first-child {
+    margin: 0;
+  }
+
+  .workout__description {
+    line-height: 2.1rem;
+    font-style: italic;
+  }
+
+  .notes {
+    font-size: 1.3rem;
+    padding-bottom: 0.65rem;
+    line-height: 1.65rem;
+    margin: -0.15rem auto 0;
+  }
+
+  .set {
+    padding-left: 2rem;
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) {
     .workout__header {
-      position: relative;
-      margin: 0rem auto 3rem;
-      padding-bottom: 2.5rem;
-      border-bottom: none;
+      margin-bottom: 4rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #CCC;
     }
-  
-    .workout__title {
-      font-size: 2.1rem;
-      line-height: 2.4rem;
-    }
-  
-    .workout_stats--date {
-      font-weight: bold;
-      margin: 0;
-    }
-  
-    .workout__stats:first-child {
-      margin: 0;
-    }
-  
-    .workout__description {
-      line-height: 2.1rem;
-      font-style: italic;
-    }
-  
-    .notes {
-      font-size: 1.3rem;
-      padding-bottom: 0.65rem;
-      line-height: 1.65rem;
-      margin: -0.15rem auto 0;
-    }
-  
-    .set {
+
+    .workout__content {
       padding-left: 2rem;
     }
-  
-    /* Small Devices, Tablets */
-    @media only screen and (min-width: 768px) {
-      .workout__header {
-        margin-bottom: 4rem;
-        padding-bottom: 3rem;
-        border-bottom: 1px solid #CCC;
-      }
-  
-      .workout__content {
-        padding-left: 2rem;
-      }
-  
-      .set {
-        margin-bottom: 2.5rem;
-        font-size: 1.5rem;
-        padding-left: 0;
-      }
-  
-      .set__description {
-        display: inline-block;
-        margin: 0 auto 0.2rem;
-      }
-  
-      .notes {
-        display: inline-block;
-        font-size: 1.3rem;
-        padding-bottom: 0.35rem;
-        line-height: 1.65rem;
-      }
-  
-      .workout-customizer {
-        max-width: none;
-        border: none;
-      }
+
+    .set {
+      margin-bottom: 2.5rem;
+      font-size: 1.5rem;
+      padding-left: 0;
     }
-  
-    @media only screen and (min-width: 992px) {
-      .workout__stats>* {
-        display: inline-block;
-        margin: 0 1rem 0 0;
-      }
+
+    .set__description {
+      display: inline-block;
+      margin: 0 auto 0.2rem;
     }
-  
-    /* Print Styles */
-    @media only print {
-        .workout__detail {
-            /* margin-top: -3rem; */
-        }
 
-        .workout__header {
-            margin-bottom: 1rem;
-        }
-
-        .workout__stats {
-            margin-bottom: 0.5rem;
-        }
-
-        .notes {
-            display: inline-block;
-        }
-
-        .set {
-            margin-bottom: 2.5rem;
-        }
-
-        .set__header {
-            margin-bottom: 0;
-        }
-
-        .set__description,
-        .set__distance,
-        .set__title {
-            display: inline-block;
-        }
-
-        .breadcrumb__container,
-        .workout__download-pdf,
-        .workout-glossary,
-        .workout-customizer,
-        .workout-customizer+img,
-        .article-author,
-        #footerOverlay {
-            display: none;
-        }
-
-        a.mega-main-menu__logo::after {
-            content: "";
-        }
+    .notes {
+      display: inline-block;
+      font-size: 1.3rem;
+      padding-bottom: 0.35rem;
+      line-height: 1.65rem;
     }
+
+    .workout-customizer {
+      max-width: none;
+      border: none;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .workout__stats>* {
+      display: inline-block;
+      margin: 0 1rem 0 0;
+    }
+  }
+
+  /* Print Styles */
+  @media only print {
+  .workout__detail {
+      margin-top: -3rem;
+  }
+
+  .workout__header {
+      margin-bottom: 1rem;
+  }
+
+  .workout__stats {
+      margin-bottom: 0.5rem;
+  }
+
+  .notes {
+      display: inline-block;
+  }
+
+  .set {
+      margin-bottom: 2.5rem;
+  }
+
+  .set__header {
+      margin-bottom: 0;
+  }
+
+  .set__description,
+  .set__distance,
+  .set__title {
+      display: inline-block;
+  }
+
+  .breadcrumb__container,
+  .workout__download-pdf,
+  .workout-glossary,
+  .workout-customizer,
+  .workout-customizer+img,
+  .article-author,
+  #footerOverlay {
+      display: none;
+  }
+
+  a.mega-main-menu__logo::after {
+      content: "";
+  }
+  }
 
 }
